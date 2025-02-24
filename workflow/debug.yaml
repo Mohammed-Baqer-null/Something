@@ -1,0 +1,11 @@
+name: SSH to GitHub Runner
+
+on:
+  workflow_dispatch  # Manually trigger workflow
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
